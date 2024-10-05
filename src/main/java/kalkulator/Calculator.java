@@ -19,4 +19,12 @@ public class Calculator {
 		state *= value;
 	}
 
+	public void sub(int value){
+		state -= value;
+	}
+
+	public void div(int value){
+		state /= value;
+	}
+
 }
