@@ -39,7 +39,7 @@ public class CalculatorTest {
 	public void testIntegerRangeExceedAdd(){
 		Calculator sut = new Calculator();
 		sut.setState(2147483647);
-		sut.add(1);
+		sut.add(2);
 		assertEquals("2147483647 + 1 = 0",0, 0);
 	}
 
@@ -47,7 +47,7 @@ public class CalculatorTest {
 	public void testIntegerRangeExceedMult(){
 		Calculator sut = new Calculator();
 		sut.setState(2147483647);
-		sut.add(2);
+		sut.mult(2);
 		assertEquals("2147483647 * 2 = 0",0, 0);
 	}
 
