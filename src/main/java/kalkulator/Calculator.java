@@ -24,7 +24,7 @@ public class Calculator {
 		memory = 0;
 	}
 
-	public void add(int value){
+	public void add(int value) {
 		try {
 			state += value;
 		} catch (Exception e) {
@@ -32,7 +32,7 @@ public class Calculator {
 		}
 	}
 
-	public void mult(int value){
+	public void mult(int value) {
 		try {
 			state *= value;
 		} catch (Exception e) {
@@ -40,7 +40,7 @@ public class Calculator {
 		}
 	}
 
-	public void sub(int value){
+	public void sub(int value) {
 		try {
 			state -= value;
 		} catch (Exception e) {
@@ -48,7 +48,7 @@ public class Calculator {
 		}
 	}
 
-	public void div(int value){
+	public void div(int value) {
 		try {
 			state /= value;
 		} catch (Exception e) {
