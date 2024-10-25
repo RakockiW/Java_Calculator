@@ -26,7 +26,7 @@ public class Calculator {
 
 	public void add(int value) {
 		try {
-			state += value;
+			state = Math.addExact(state, value);
 		} catch (Exception e) {
 			state = 0;
 		}
@@ -34,7 +34,7 @@ public class Calculator {
 
 	public void mult(int value) {
 		try {
-			state *= value;
+			state = Math.multiplyExact(state, value);
 		} catch (Exception e) {
 			state = 0;
 		}
@@ -42,7 +42,7 @@ public class Calculator {
 
 	public void sub(int value) {
 		try {
-			state -= value;
+			state = Math.subtractExact(state, value);
 		} catch (Exception e) {
 			state = 0;
 		}

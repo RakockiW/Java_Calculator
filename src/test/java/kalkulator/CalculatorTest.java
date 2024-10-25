@@ -40,7 +40,7 @@ public class CalculatorTest {
 		Calculator sut = new Calculator();
 		sut.setState(2147483647);
 		sut.add(2);
-		assertEquals("2147483647 + 1 = 0",0, 0);
+		assertEquals("2147483647 + 1 = 0",0, sut.getState());
 	}
 
 	@Test
@@ -48,7 +48,7 @@ public class CalculatorTest {
 		Calculator sut = new Calculator();
 		sut.setState(2147483647);
 		sut.mult(2);
-		assertEquals("2147483647 * 2 = 0",0, 0);
+		assertEquals("2147483647 * 2 = 0",0, sut.getState());
 	}
 
 
@@ -103,9 +103,9 @@ public class CalculatorTest {
 	@Test
 	public void testIntegerRangeExceedSub(){
 		Calculator sut = new Calculator();
-		sut.setState(-2147483647);
+		sut.setState(-2147483648);
 		sut.sub(1);
-		assertEquals("-2147483647 - 1 = 0",0, 0);
+		assertEquals("-2147483648 - 1 = 0",0, sut.getState());
 	}
 	@Test
 	public void testDivByPositiveNumbers(){
